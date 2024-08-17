@@ -1,0 +1,107 @@
+#chats ::selection {
+  background-color: transparent;
+}
+
+#chats #top-area {
+  background-color: white;
+  color: black;
+  font-size: medium;
+  height: 10%;
+  margin: 0px;
+  border-bottom: solid 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+#chats #top-area #add-icon {
+  padding: 5px;
+}
+#chats #top-area #add-icon:hover {
+  background-color: lightgray;
+  padding: 5px;
+}
+#chats #conversation-tile {
+  background-color: white;
+  height: 10%;
+  margin: 0px;
+  border-bottom: solid 1px gray;
+  display: flex;
+
+  align-items: center;
+}
+
+#chats #selected-conversation-tile {
+  background-color: lightgray;
+  height: 10%;
+  margin: 0px;
+  border-bottom: solid 2px black;
+  display: flex;
+
+  align-items: center;
+}
+
+#chats #img {
+  background-image: url("https://xsgames.co/randomusers/avatar.php?g=male");
+  background-size: cover;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  margin: 0px 5px;
+  border-radius: 100%;
+  text-align: center;
+}
+#chats p {
+  font-weight: bold;
+}
+
+#search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  margin: 0px 10px;
+  background-color: white;
+}
+
+#search-area input {
+  width: 80%;
+  height: 80%;
+  border: none;
+  border-bottom: solid 1px lightgray;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+#search-area input:focus {
+  outline: none;
+}
+#search-area #search-icon {
+  height: 50%;
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+#search-area #search-icon:hover {
+  color: gray;
+}
+#found-users-area {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 10px;
+  height: 70%;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#found-users-area #found-user-tile {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+  border-bottom: solid 1px gray;
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+}
